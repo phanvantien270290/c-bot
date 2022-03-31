@@ -1,0 +1,64 @@
+html,
+body {
+    height: 100%
+}
+
+main,
+#root,
+.App {
+    height: inherit
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* overflow: hidden; */
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.color-status-active {
+    color: green;
+}
+
+.color-status-inactive {
+    color: red;
+}
+
+.bg-status-success {
+    color: #fff;
+    background-color: #09cf97 !important;
+}
+
+.bg-status-error {
+    color: #fff;
+    background-color: #fa5c7c !important;
+}
+
+.bg-warning {
+    color: #fff;
+    background-color: #f4772e !important;
+}
+
+.bg-danger {
+    color: #fff;
+    background-color: #f83245 !important;
+}
+
+.bg-info {
+    color: #fff;
+    background-color: #11c5db !important;
+}
+
+.bg-success {
+    color: #fff;
+    background-color: #1bc943 !important;
+}

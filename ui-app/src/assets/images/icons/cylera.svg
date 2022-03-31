@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny-ps" viewBox="0 0 70 93" width="70" height="70">
+	<title>Lớp 1</title>
+	<defs>
+		<image width="60" height="93" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAABdCAMAAADOivW/AAAAAXNSR0IB2cksfwAAAFdQTFRFAAAACYHDCYHDCYHDCYHDCYHDCYHDCYHDCYHDCYHDCYHDCYHDCYHDCYHDCYHDCYHDCYHDCYHDCYHDCYHDCYHDCYHDCYHDCYHDCYHDCYHDCYHDCYHDCYHDsgpKigAAAB10Uk5TACVciaOtl3FDDtT/9hvCfwUz5U3NFPtp3eHuuHahy8VnAAAB3ElEQVR4nO2Y63KCMBCFQ4CAhJsaUMH3f85qC4pkNzlMppdpe/5/w7LZy0mEmBTJOEkTleU7sVWy0LNKFW1Cq1ovVTYtzu4PeqUajv1YrlmtTYexsrdZrQuIPlEoShMxT3TlhxUH67OfbpMQOuzbP5RGTuyf/lt0/BtpoEt4Gumxz6IvwCri6cM30oFZCzpvA+xQnq6B/c3TiR920FkI3e9D6AKxLexsQQJn6QPkmDga+jRHY5/m6ByCBe08kEoRnG8ZMJihUYPbjgR8AmFRDTYco7BobDiF4ciGDQwLy5RvgWsLPn8RfA4Iu7ITNsLw1YYVyu7sZOsrClNteQRZor60xq5PHdlUBYK2V6IpNNYX8kKiWvvnfm4Y1F9fUcqh3tHbKfKa+aHBuaR3DXtTvKtxoG1Gp3jWhR/5LZviWfzEPxYelO+JyG77tQwXtHTm6V2smZJelDeBueNoJ7G2m+r5lUa2E3nzNKnnH2A6X7KMo5W4d49Jw8llJahF+lDZuA2rI+peeXw2MdhnpV4bsOfQGrCaDGygAU0s8FshSwS9tbFdm0MGv8qtm7GMNzwnrlZhAtyCnqqWcY+Im1/quZQM6EsXivptKX6V2pjiF93+ulfgu6Wt1F/FD70BoaZnYfyXJWQAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="Lớp 1" href="#img1" x="0" y="0"/>
+</svg>

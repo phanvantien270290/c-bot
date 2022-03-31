@@ -1,0 +1,194 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "The C-Label API Document",
+        "description": "",
+        "license1": {
+            "name": "",
+            "url": ""
+        }
+    },
+    "host": "localhost:3001",
+    "basePath": "/api",
+    "tags": [
+        {
+            "name": "Print",
+            "description": "API for Print function"
+        },
+        {
+            "name": "Label",
+            "description": "API for Management function"
+        }
+    ],
+    "schemes": [
+        "http",
+        "https"
+    ],
+    "consumes": [
+        "application/json"
+    ],
+    "produces": [
+        "application/json"
+    ],
+    "paths": {
+        "/label/apiprint": {
+            "post": {
+                "tags": [
+                    "Print"
+                ],
+                "description": "Print a Label via API",
+                "parameters": [
+                    {
+                        "name": "x-access-token",
+                        "in": "header",
+                        "description": "The access token is to authenticate for the C-Label API",
+                        "schema": {
+                            "$ref": "#/schema/Header"
+                        },
+                        "required": true
+                    },
+                    {
+                        "name": "Parameters",
+                        "in": "body",
+                        "description": "The parameters are to request",
+                        "schema": {
+                            "$ref": "#/schema/APIPrint"
+                        },
+                        "required": true
+                    }
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The result is going to be returned here",
+                        "schema": {
+                            "$ref": "#/schema/Response"
+                        }
+                    }
+                }
+            }
+        },
+        "/label/retrieve": {
+            "get": {
+                "tags": [
+                    "Label"
+                ],
+                "summary": "Retrieve a label via criteria",
+                "parameters": [
+                    {
+                        "name": "custId",
+                        "in": "query",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "partNumber",
+                        "in": "query",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "serialNumber",
+                        "in": "query",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The label information",
+                        "schema": {
+                            "$ref": "#/schema/Response"
+                        }
+                    }
+                }
+            }
+        },
+        "/label/find": {
+            "get": {
+                "summary": "Get list labels based on criteria",
+                "tags": [
+                    "Label"
+                ],
+                "parameters": [
+                    {
+                        "name": "custId",
+                        "in": "query",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "partNumber",
+                        "in": "query",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "serialNumber",
+                        "in": "query",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The list of labels",
+                        "schema": {
+                            "$ref": "#/schema/Response"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "schema": {
+        "APIPrint": {
+            "required": [
+                "customer"
+            ],
+            "properties": {
+                "customer": {
+                    "type": "string"
+                },
+                "manfPartNumber": {
+                    "type": "string"
+                },
+                "serialNumber": {
+                    "type": "string"
+                },
+                "printedBy": {
+                    "type": "string"
+                },
+                "modelType": {
+                    "type": "string",
+                    "nullable": true
+                }
+            }
+        },
+        "Response": {
+            "type": "object",
+            "properties": {
+                "status": {
+                    "type": "boolean"
+                },
+                "data": {
+                    "type": "object"
+                },
+                "msg": {
+                    "type": "string"
+                }
+            }
+        },
+        "Header": {
+            "type": "object",
+            "properties": {
+                "token": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

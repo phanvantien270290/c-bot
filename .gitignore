@@ -1,0 +1,56 @@
+# @c-label
+
+# Logs #
+/logs
+*.log
+*.log*
+
+# Node files #
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+.env
+app/config/app.config.ts
+
+# OS generated files #
+.DS_Store
+Thumbs.db
+.tmp/
+src/api/schema.gql
+
+# Typing #
+typings/
+
+# Dist #
+dist/
+tsconfig.build.json
+
+# IDE #
+.idea/
+*.swp
+.awcache
+
+# Generated source-code #
+# app/**/*.js
+app/**/*.js.map
+!app/public/**/*
+test/**/*.js
+test/**/*.js.map
+coverage/
+!test/preprocessor.js
+mydb.sql
+public/app-bundle*.js*
+
+# dependencies
+/.pnp
+.pnp.js
+
+# production
+/build
+
+# misc
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
